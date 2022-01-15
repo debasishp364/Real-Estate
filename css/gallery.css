@@ -1,0 +1,192 @@
+body{
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+header{
+  width: 100%; height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)),
+    url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+  width: 100%; height: 15vh;
+  background:  rgba(0, 0, 0, 0.2);
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav.logo{
+  width: 28%;
+  text-align: center;
+}
+
+
+nav .menu{
+  width: 40%;
+  display: flex; justify-content: space-around;
+}
+
+nav .menu a{
+  width: 25%;
+  text-decoration: none; color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+}
+
+main{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Gallery */
+
+
+:root {
+
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+
+	flex: 1 0 24rem;
+
+	margin: 0rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+
+.gallery-item {
+  padding: 15px;
+}
+
+.gallery-item > img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+
+/*
+.gallery-image {
+	display: block;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+
+/*  Fotter Part  */
+
+footer {
+  background-color: #082c2c;
+}
+
+.footer-block {
+  min-height: 300px;
+}
+
+.info-block > div {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 20px;
+}
+
+.info-block > div > h4 {
+  color: #68b891;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-link:hover {
+  color: #035858;
+}
+
+.credits {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #035858;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.credits a {
+  text-decoration: none;
+  color: #006161;
+}
+
+.credits a:hover {
+  color: #048888;
+}
